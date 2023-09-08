@@ -110,11 +110,11 @@ function App() {
         <div className="container">
           <div className="video-container">
             <div className="video">
-              {stream && <video className="one" playsInline muted ref={myVideo} autoPlay style={{ width: "450px" }} />}
+              {stream && <video className="one" playsInline muted ref={myVideo} autoPlay style={{ width: "450px", marginLeft: "-105px", marginRight: "45px" }} />}
             </div>
             <div className="video">
               {callAccepted && !callEnded ?
-                <video playsInline ref={userVideo} autoPlay style={{ width: "300px" }} /> :
+                <video playsInline ref={userVideo} autoPlay style={{ width: "450px", marginRight: "45px" }} /> :
                 null}
             </div>
           </div>
